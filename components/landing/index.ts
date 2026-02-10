@@ -1,0 +1,8 @@
+export { HeroSection } from './HeroSection'
+export { FeaturesSection } from './FeaturesSection'
+export { PricingSection } from './PricingSection'
+export { TestimonialsSection } from './TestimonialsSection'
+export { CTASection } from './CTASection'
+export { FAQSection } from './FAQSection'
+export { FooterSection } from './FooterSection'
+export { LandingPageRenderer } from './LandingPageRenderer'
