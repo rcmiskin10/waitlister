@@ -1,0 +1,84 @@
+-- ============================================
+-- NextSaaS AI Platform - Seed Data
+-- ============================================
+-- Development seed data
+-- Run: supabase db reset (includes seed)
+
+-- Note: User profiles are auto-created via trigger on auth.users
+-- This file can be used for test data once a user exists
+
+-- Sample landing page content structure (for reference)
+-- INSERT INTO public.landing_pages (user_id, name, slug, content, theme, metadata)
+-- VALUES (
+--   'USER_UUID_HERE',
+--   'My SaaS Landing Page',
+--   'my-saas',
+--   '{
+--     "sections": [
+--       {
+--         "type": "hero",
+--         "props": {
+--           "headline": "Build Your SaaS Faster",
+--           "subheadline": "AI-powered boilerplate with everything you need to launch",
+--           "ctaText": "Get Started Free",
+--           "ctaLink": "/signup",
+--           "variant": "centered"
+--         }
+--       },
+--       {
+--         "type": "features",
+--         "props": {
+--           "headline": "Everything You Need",
+--           "layout": "grid",
+--           "features": [
+--             {
+--               "icon": "Zap",
+--               "title": "AI-Powered Agents",
+--               "description": "Four specialized AI agents to help you build, research, and grow."
+--             },
+--             {
+--               "icon": "CreditCard",
+--               "title": "Stripe Billing",
+--               "description": "Subscription billing ready to go with customer portal."
+--             },
+--             {
+--               "icon": "Shield",
+--               "title": "Authentication",
+--               "description": "Secure auth with Supabase including OAuth providers."
+--             }
+--           ]
+--         }
+--       },
+--       {
+--         "type": "pricing",
+--         "props": {
+--           "headline": "Simple, Transparent Pricing",
+--           "plans": [
+--             {
+--               "name": "Free",
+--               "price": 0,
+--               "features": ["1 AI agent", "10 conversations/mo", "1 landing page"]
+--             },
+--             {
+--               "name": "Pro",
+--               "price": 19,
+--               "interval": "month",
+--               "features": ["All 4 AI agents", "Unlimited conversations", "10 landing pages"],
+--               "highlighted": true
+--             },
+--             {
+--               "name": "Team",
+--               "price": 49,
+--               "interval": "month",
+--               "features": ["Everything in Pro", "5 team members", "Unlimited pages"]
+--             }
+--           ]
+--         }
+--       }
+--     ]
+--   }'::jsonb,
+--   '{"primaryColor": "#6366f1", "secondaryColor": "#8b5cf6", "font": "Inter"}'::jsonb,
+--   '{"title": "My SaaS - Build Faster", "description": "Launch your SaaS in record time"}'::jsonb
+-- );
+
+SELECT 'Seed file loaded - uncomment queries to insert test data' AS message;
